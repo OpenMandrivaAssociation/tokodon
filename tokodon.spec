@@ -33,6 +33,7 @@ BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(OpenSSL)
 BuildRequires:	cmake(Qt5Keychain)
 BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5QQC2DesktopStyle)
 
 %description
 Mastodon client for Plasma Mobile
