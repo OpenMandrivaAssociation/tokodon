@@ -2,7 +2,7 @@
 #define commit cc1ac2452e41873741c8b5f3fcafa29ae3ce5a30
 
 Name:		tokodon
-Version:	22.04
+Version:	22.06
 Release:	%{?snapshot:1.%{snapshot}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?snapshot}
@@ -54,3 +54,5 @@ Mastodon client for Plasma Mobile
 %{_datadir}/applications/org.kde.tokodon.desktop
 %{_datadir}/metainfo/org.kde.tokodon.appdata.xml
 %{_datadir}/icons/hicolor/scalable/apps/org.kde.tokodon.svg
+%{_datadir}/knotifications5/tokodon.notifyrc
+%{_datadir}/qlogging-categories5/tokodon.categories
