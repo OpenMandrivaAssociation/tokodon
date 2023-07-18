@@ -2,7 +2,7 @@
 #define commit cc1ac2452e41873741c8b5f3fcafa29ae3ce5a30
 
 Name:		tokodon
-Version:	22.11
+Version:	23.02.0
 Release:	%{?snapshot:1.%{snapshot}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?snapshot}
