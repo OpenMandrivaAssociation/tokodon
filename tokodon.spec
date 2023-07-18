@@ -2,7 +2,7 @@
 #define commit cc1ac2452e41873741c8b5f3fcafa29ae3ce5a30
 
 Name:		tokodon
-Version:	22.11
+Version:	23.02.0
 Release:	%{?snapshot:1.%{snapshot}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?snapshot}
@@ -24,6 +24,7 @@ BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Multimedia)
 BuildRequires:	cmake(Qt5Svg)
+BuildRequires:  cmake(Qt5Test)
 BuildRequires:	cmake(Qt5WebSockets)
 BuildRequires:	cmake(KF5Kirigami2)
 BuildRequires:	cmake(KF5I18n)
@@ -34,6 +35,8 @@ BuildRequires:	cmake(OpenSSL)
 BuildRequires:	cmake(Qt5Keychain)
 BuildRequires:	cmake(KF5DBusAddons)
 BuildRequires:	cmake(KF5QQC2DesktopStyle)
+BuildRequires:  cmake(KF5KirigamiAddons)
+BuildRequires:  cmake(KF5KIO)
 
 %description
 Mastodon client for Plasma Mobile
