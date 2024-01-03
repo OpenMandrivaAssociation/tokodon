@@ -4,7 +4,7 @@
 
 Name:		tokodon
 Version:	23.08.4
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/network/tokodon/-/archive/v%{version}/tokodon-v%{version}.tar.bz2
