@@ -4,7 +4,7 @@
 
 Name:		plasma6-tokodon
 Version:	24.01.90
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/network/tokodon/-/archive/v%{version}/tokodon-v%{version}.tar.bz2
@@ -26,7 +26,11 @@ BuildRequires:	cmake(Qt6QuickControls2)
 BuildRequires:	cmake(Qt6Multimedia)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:  cmake(Qt6Test)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
 BuildRequires:	cmake(Qt6WebSockets)
+BuildRequires:	cmake(Qt6WebView)
 BuildRequires:	cmake(KF6Kirigami2)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6Notifications)
@@ -38,7 +42,9 @@ BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6QQC2DesktopStyle)
 BuildRequires:  cmake(KF6KirigamiAddons)
 BuildRequires:  cmake(KF6KIO)
+BuildRequires:	cmake(KF6Purpose)
 BuildRequires:	cmake(MpvQt)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 Mastodon client for Plasma Mobile
