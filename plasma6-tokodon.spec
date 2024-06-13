@@ -5,7 +5,7 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		plasma6-tokodon
-Version:	24.05.0
+Version:	24.05.1
 Release:	%{?git:0.%{git}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
