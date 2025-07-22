@@ -5,7 +5,7 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		tokodon
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
@@ -15,8 +15,6 @@ Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/tokod
 %endif
 License:	GPLv3
 Group:		Applications/Productivity
-BuildRequires:	cmake
-BuildRequires:	ninja
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	cmake(ECM)
@@ -50,23 +48,15 @@ BuildRequires:	cmake(KF6Purpose)
 BuildRequires:	cmake(MpvQt)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
+%rename plasma6-tokodon
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Mastodon client for Plasma Mobile
 
-%prep
-%autosetup -p1 -n tokodon-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-%find_lang tokodon
-
-%files -f tokodon.lang
+%files -f %{name}.lang
 %{_bindir}/tokodon
 %{_bindir}/tokodon-offline
 %{_datadir}/applications/org.kde.tokodon.desktop
