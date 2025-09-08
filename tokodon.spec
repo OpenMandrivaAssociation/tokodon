@@ -47,6 +47,7 @@ BuildRequires:	cmake(KF6QQC2DesktopStyle)
 BuildRequires:  cmake(KF6KirigamiAddons)
 BuildRequires:  cmake(KF6KIO)
 BuildRequires:	cmake(KF6Purpose)
+BuildRequires:	cmake(QCoro6Config)
 BuildRequires:	cmake(MpvQt)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
