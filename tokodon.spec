@@ -5,7 +5,7 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		tokodon
-Version:	25.08.0
+Version:	25.08.1
 Release:	%{?git:0.%{git}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
@@ -47,7 +47,7 @@ BuildRequires:	cmake(KF6QQC2DesktopStyle)
 BuildRequires:  cmake(KF6KirigamiAddons)
 BuildRequires:  cmake(KF6KIO)
 BuildRequires:	cmake(KF6Purpose)
-BuildRequires:	cmake(QCoro6Config)
+BuildRequires:	cmake(QCoro6)
 BuildRequires:	cmake(MpvQt)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
