@@ -50,6 +50,7 @@ BuildRequires:	cmake(KF6Purpose)
 BuildRequires:	cmake(KUnifiedPush)
 BuildRequires:	cmake(QCoro6)
 BuildRequires:	cmake(MpvQt)
+BuildRequires:	pkgconfig(openssl)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
 %rename plasma6-tokodon
