@@ -5,7 +5,7 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		tokodon
-Version:	25.12.1
+Version:	25.12.2
 Release:	%{?git:0.%{git}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
@@ -63,7 +63,6 @@ Mastodon client for Plasma Mobile
 
 %files -f %{name}.lang
 %{_bindir}/tokodon
-%{_bindir}/tokodon-offline
 %{_datadir}/applications/org.kde.tokodon.desktop
 %{_datadir}/metainfo/org.kde.tokodon.appdata.xml
 %{_datadir}/icons/hicolor/scalable/apps/org.kde.tokodon.svg
