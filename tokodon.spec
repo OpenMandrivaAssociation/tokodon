@@ -5,8 +5,8 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		tokodon
-Version:	26.08.1
-Release:	%{?git:0.%{git}.}2
+Version:	26.08.2
+Release:	%{?git:0.%{git}.}1
 Summary:	Mastodon client for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/network/tokodon/-/archive/%{gitbranch}/tokodon-%{gitbranchd}.tar.bz2#/tokodon-%{git}.tar.bz2
